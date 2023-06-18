@@ -8,6 +8,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { AiFillEye } from 'react-icons/ai';
 import { AiFillEyeInvisible } from 'react-icons/ai';
 import { toast } from 'react-hot-toast';
+import { saveUser } from '../../api/auth';
 
 
 const Login = () => {
@@ -36,11 +37,12 @@ const Login = () => {
         signInWithGoogle()
             .then((result) => {
                 console.log(result.user);
-                // saveUser(result.user)
+                saveUser(result.user)
+                toast.success('successfully Logged in');
                 navigate(from, { replace: true });
             })
             .catch((err) => {
-                // setLoading(false)
+                setLoading(false)
                 console.log(err.message);
                 toast.error(err.message);
             });

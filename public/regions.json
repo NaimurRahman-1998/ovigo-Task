@@ -1,0 +1,17 @@
+[
+    {
+        "regionName" :"Madrid",
+        "regionImage" : "https://media.cntraveler.com/photos/636529b1d36379b0d80f679d/4:3/pass/Madrid_GettyImages-1175211342.jpg",
+        "properties" : 3
+    },
+    {
+        "regionName" :"Austin",
+        "regionImage" : "https://blog-www.pods.com/wp-content/uploads/2022/08/resized_FI_GettyImages-1354082462_Sixth-Street-music-and-entertainment-district-Austin-TX.jpg",
+        "properties" : 4
+    },
+    {
+        "regionName" :"London",
+        "regionImage" : "https://i2-prod.mirror.co.uk/incoming/article28871026.ece/ALTERNATES/s1200b/0_London-at-sunset.jpg",
+        "properties" : 2
+    }
+]

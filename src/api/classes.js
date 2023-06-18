@@ -1,5 +1,5 @@
-export const addClass = async classData => {
-    const response = await fetch(`https://fabserver-1zfv0qa9u-naimurrahman-1998.vercel.app/classes`, {
+export const addRoom = async classData => {
+    const response = await fetch(`http://localhost:5000/rooms`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json',

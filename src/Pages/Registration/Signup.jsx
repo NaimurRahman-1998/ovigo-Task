@@ -46,7 +46,7 @@ const SignUp = () => {
                         // ...
                         setErrorMessage("");
                         toast.success('user Created')
-                        // saveUser(userCredential.user)
+                        saveUser(userCredential.user)
                         logOut()
                     }).catch((error) => {
                         // An error occurred
@@ -100,10 +100,11 @@ const SignUp = () => {
         signInWithGoogle()
             .then((result) => {
                 console.log(result.user);
+                saveUser(result.user)
                 navigate(from, { replace: true });
             })
             .catch((err) => {
-                // setLoading(false)
+                setLoading(false)
                 console.log(err.message);
                 toast.success(err.message);
             });
